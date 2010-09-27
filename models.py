@@ -81,6 +81,7 @@ class AndroidDevice(models.Model):
             request = urllib2.Request(C2DM_URL, params, headers)
 
             # Make the request
+            # This is a comment change lalalala
             response = urllib2.urlopen(request)
 
             result = response.read().split('=')
